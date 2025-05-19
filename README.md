@@ -1,18 +1,73 @@
-# Criando um Banco Digital com Java e Orientação a Objetos
+# 💻 Banco Digital com Java e POO
 
-## 02/08/2021 - [Mentoria #1: Tire Suas Dúvidas Sobre Orientação a Objetos](https://www.youtube.com/watch?v=YS6ouOhkyNI)
+Projeto desenvolvido como parte do desafio da [DIO](https://web.dio.me/) para reforçar os conceitos de **Programação Orientada a Objetos (POO)** em Java, com um sistema bancário completo e interativo.
 
-Desafio: Considerando nosso conhecimento no domínio bancário, iremos abstrair uma solução Orientada a Objetos em Java. Para isso, vamos interpretar o seguinte cenário:
-“Um banco oferece aos seus clientes dois tipos de contas (corrente e poupança), as quais possuem as funcionalidades de depósito, saque e transferência (entre contas da própria instituição).”
+> 🔗 Fork realizado e personalizado por [**Val Faria**](https://github.com/Val-Faria)
 
-### Abstração
-Habilidade de concentrar-se nos aspectos essenciais de um domínio, ignorando características menos importantes ou acidentais. Nesse contexto, objetos são abstrações de entidades existentes no domínio em questão.
+---
 
-### Encapsulamento
-Encapsular significa esconder a implementação dos objetos, criando assim interfaces de uso mais concisas e fáceis de usar/entender. O encapsulamento favorece principalmente dois aspectos de um sistema: a manutenção e a evolução.
+## 🧠 Conceitos Abordados
 
-### Herança
-Permite que você defina uma classe filha que reutiliza (herda), estende ou modifica o comportamento de uma classe pai. A classe cujos membros são herdados é chamada de classe base. A classe que herda os membros da classe base é chamada de classe derivada.
+- ✅ Abstração
+- ✅ Encapsulamento
+- ✅ Herança
+- ✅ Polimorfismo
+- ✅ Organização de classes e responsabilidades
 
-### Polimorfismo
-Capacidade de um objeto poder ser referenciado de várias formas, ou seja, é capacidade de tratar objetos criados a partir das classes específicas como objetos de uma classe genérica. Cuidado, polimorfismo não quer dizer que o objeto fica se transformando, muito pelo contrário, um objeto nasce de um tipo e morre daquele tipo, o que pode mudar é a maneira como nos referimos a ele.
+---
+
+## 🚀 Funcionalidades
+
+- 👤 Cadastro de clientes
+- 🏦 Criação de conta corrente e conta poupança
+- 💰 Depósito e saque
+- 🔁 Transferência entre contas
+- 📄 Emissão de extrato detalhado
+- 🎛️ Interação com o usuário via terminal
+- 🌍 Suporte a caracteres UTF-8 (acentuação correta nos nomes)
+
+---
+
+## ✨ Melhorias feitas por **Val Faria**
+
+| Tipo de melhoria              | Descrição |
+|------------------------------|-----------|
+| 🧩 Organização de código      | Refatoração completa para melhor leitura e modularização |
+| 🎯 Entrada via terminal       | Inserção de dados com `Scanner`, tornando o sistema interativo |
+| 🔐 Validações                 | Prevenção de saques/transferências com saldo insuficiente |
+| 🔤 Correção de Encoding       | Suporte a UTF-8 para evitar erros como "JoÃ£o" |
+| 🧾 Extrato detalhado          | Impressão clara das operações realizadas por cliente |
+| 📌 Responsabilidade única     | Separação clara entre classes como `Banco`, `Cliente`, `Conta`, etc |
+
+---
+
+## 🛠️ Como executar
+
+```bash
+# Clone o repositório
+git clone https://github.com/Val-Faria/lab-banco-digital-oo.git
+cd lab-banco-digital-oo
+
+# Compile os arquivos Java
+javac *.java
+
+# Execute o programa
+java Main
+
+## 📁 Estrutura de Classes
+📦 lab-banco-digital-oo
+ ┣ 📜 Banco.java
+ ┣ 📜 Cliente.java
+ ┣ 📜 Conta.java
+ ┣ 📜 ContaCorrente.java
+ ┣ 📜 ContaPoupanca.java
+ ┣ 📜 IConta.java
+ ┗ 📜 Main.java
+
+## 👩‍💻 Sobre a autora
+Val Faria
+🎓 Estudante de Análise e Desenvolvimento de Sistemas
+🚀 Em transição de carreira com foco em Backend Java
+💡 Apaixonada por desafios de lógica, POO e automação
+
+🔗 GitHub: github.com/Val-Faria
