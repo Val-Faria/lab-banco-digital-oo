@@ -1,6 +1,4 @@
-
 public class Cliente {
-
 	private String nome;
 
 	public String getNome() {
@@ -10,5 +8,4 @@ public class Cliente {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
 }

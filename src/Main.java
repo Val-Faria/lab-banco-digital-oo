@@ -1,18 +1,23 @@
-
 public class Main {
-
 	public static void main(String[] args) {
-		Cliente venilton = new Cliente();
-		venilton.setNome("Venilton");
-		
-		Conta cc = new ContaCorrente(venilton);
-		Conta poupanca = new ContaPoupanca(venilton);
+		Banco banco = new Banco("Banco Digital Java");
 
-		cc.depositar(100);
-		cc.transferir(100, poupanca);
-		
-		cc.imprimirExtrato();
-		poupanca.imprimirExtrato();
+		Cliente joao = new Cliente();
+		joao.setNome("João");
+
+		Conta ccJoao = new ContaCorrente(joao);
+		Conta cpJoao = new ContaPoupanca(joao);
+
+		banco.adicionarConta(ccJoao);
+		banco.adicionarConta(cpJoao);
+
+		ccJoao.depositar(1000);
+		ccJoao.transferir(200, cpJoao);
+
+		ccJoao.imprimirExtrato();
+		cpJoao.imprimirExtrato();
+
+		System.out.println("\n--- Todas as contas cadastradas ---");
+		banco.listarContas();
 	}
-
 }
